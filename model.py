@@ -1,4 +1,5 @@
 import os
+importnumpy as np
 # hide TF warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 import tensorflow as tf
@@ -37,8 +38,8 @@ class EngFrenTranslator :
 
 def main():
 	model = EngFrenTranslator('my_model.h5')
-	predicted_class = model.predict("https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg")
-	logging.info("This is an image of a {}".format(predicted_class)) 
+	predicted_class = model.predict("she is driving the truck")
+	logging.info("In French:  {}".format(predicted_class)) 
 
 
 if __name__ == "__main__":
