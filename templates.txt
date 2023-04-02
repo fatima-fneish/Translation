@@ -1,0 +1,8 @@
+my_app/
+   app.py
+   model/
+      my_model.h5
+      eng_tokenizer.json
+      frn_tokenizer.json
+   templates/
+      index.html
